@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="birthyear"></p>
+    <p id="customerdetail"></p>
+    <script>
+        var age = 26; //#1
+        alert("Age: "+age);
+        var n = Math.ceil(Math.random()*6); //#2
+        alert("Visited on Website: "+n);
+        var birth_year = 1993;
+        document.getElementById('birthyear').innerHTML = "My birth year is "+birth_year; //#4
+        var visitor_name = prompt("Visitor name: ");
+        var product_title = prompt("Product title: ");
+        var product_quantiy = prompt("Quantity: ");
+        document.getElementById('customerdetail').innerHTML ="<span>" +visitor_name.charAt(0).toUpperCase()+visitor_name.slice(1)+"</span> Ordered <span>"+product_quantiy+" T-shirts</span> on "+product_title.toUpperCase(); //#5
+    </script>
+</body>
+</html>

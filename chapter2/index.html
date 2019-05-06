@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 120%;
+        }
+    span{
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+    <p id="htmlcontent"></p>
+    <!-- <b></b> -->
+    <script>
+        var username;     //#1
+        var myName = "Anees"; //#2
+        var message = "Hello World" //#3
+        var age = "26 year old"; //#4
+        var course = "Certified mobile application developer"; //4
+        var food = "pizza"; //5
+        var email = "example@example.com" //6
+        var book = "A smarter way to learn javascript";  //7
+        alert(myName);
+        alert(message);
+        alert(food.slice(0,food.length));
+        alert(food.slice(0,food.length-1));
+        alert(food.slice(0,food.length-2));
+        alert(food.slice(0,food.length-3));
+        alert(food.slice(0,food.length-4));
+        alert("My email address is "+email);
+        alert("I am trying to learn from the book "+book);
+        document.getElementById('htmlcontent').innerHTML = "Yah! <b><span>i</span></b> can write <b><span>html</span></b> content through javascript"; //8
+    </script>
+</body>
+</html>
