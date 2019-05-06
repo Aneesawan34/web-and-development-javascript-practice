@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="temperature_farhenhite"></p>
+    <p id="temperature_celcius"></p>
+    <script>
+        var temp = +prompt("Enter tempreture");
+        // var a = prompt()
+        var output_1 = (temp*9/5)+32;
+        document.getElementById('temperature_farhenhite').innerHTML = temp+"<sup>0</sup>C"+"is"+output_1+"<sup>0</sup>F";
+        var output_2 = (output_1-32)*5/9;
+        document.getElementById('temperature_celcius').innerHTML=output_1+"<sup>0</sup>F"+"is"+output_2+"<sup>0</sup>C";
+    </script>
+</body>
+</html>

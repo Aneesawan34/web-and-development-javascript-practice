@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1{
+            /* font-size: 140%; */
+            padding: 10px;
+            /* font-weight: bold; */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="table"></h1>
+    <script>
+    var number = +prompt("enter number for Table: ");
+    document.getElementById('table').innerHTML = "Table of "+number;
+    for(var i = 1; i<=10;i++){
+    document.write("<table>")
+    document.write("<tr>"+"<td>"+number+"</td>"+"<td>"+"X"+"</td>"+"<td>"+i+"</td>"+"<td>"+"="+"</td>"+"<td>"+number*i+"</td>"+"</tr>")
+    document.write("</table>")
+    }
+    </script>
+</body>
+</html>

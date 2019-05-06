@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Currency in PKR</h1>
+    <p id="Usdollar"></p>
+    <p id="Riyal"></p>
+    <p id="convertFromUs"></p>
+    <p id="convertFromRiyal"></p>
+    <script>
+        var dollarPrice = +prompt("Enter Us Dollar Amount: ");
+        var riyalPrice = +prompt("Enter Riyal Amount: ");
+        var convertRiyalToPkr = riyalPrice*28;
+        var convertDollarToPkr = dollarPrice*104.80;
+        document.getElementById('Usdollar').innerHTML = "Us Dollar: "+ dollarPrice;
+        document.getElementById('Riyal').innerHTML="Riyal: "+ riyalPrice
+        document.getElementById('convertFromUs').innerHTML = "Total Currency of <b>Us Dollar</b> in PKR: "+convertDollarToPkr;
+        document.getElementById('convertFromRiyal').innerHTML = "Total Currency of <b>Riyal</b> in PKR: "+convertRiyalToPkr;
+    </script>
+</body>
+</html>

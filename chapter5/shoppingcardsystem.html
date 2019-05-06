@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="priceOfItem1"></p>
+    <p id="quantityOfItem1"></p>
+    <p id="priceOfItem2"></p>
+    <p id="quantityOfItem2"></p>
+    <p id="shippingCharges"></p>
+    <p id="totalCost"></p>
+    <script>
+        var item1 = 650;
+        var quantityOfItem1 = +prompt("Enter Quantity for item 1");
+        var item2 = 100;
+        var quantityOfItem2 = +prompt("Enter Quantity for item 2");
+        var shippingCharges = 100;
+        var totalCost = item1*quantityOfItem1+item2*quantityOfItem2+shippingCharges;
+        document.getElementById('priceOfItem1').innerHTML="Price of item is "+item1;
+        document.getElementById('quantityOfItem1').innerHTML="Quantity of item 1 is "+quantityOfItem1;
+        document.getElementById('priceOfItem2').innerHTML="Price of item is "+item2;
+        document.getElementById('quantityOfItem2').innerHTML="Quantity of item 1 is "+quantityOfItem2;
+        document.getElementById('shippingCharges').innerHTML="Shipping Charges "+shippingCharges;
+        document.getElementById('totalCost').innerHTML="Total cost of your order is "+totalCost;
+    </script>
+</body>
+</html>
