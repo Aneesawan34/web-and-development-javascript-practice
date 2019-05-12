@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks_out_of = 100;
+        var total_marks = marks_out_of*3;
+        var first_subject = prompt("Enter first subject: ");
+        var second_subject = prompt("Enter second subject: ");
+        var third_subject = prompt("Enter third subject: ");
+        var first_subject_marksObtained = +prompt(first_subject);
+        var second_subject_marksObtained = +prompt(second_subject);
+        var third_subject_marksObtained = +prompt(third_subject);
+        var total_Obtained_marks = first_subject_marksObtained+second_subject_marksObtained+third_subject_marksObtained;
+        var total_percentage = (total_Obtained_marks*100)/total_marks;
+        var first_subject_percentage = (first_subject_marksObtained*100)/marks_out_of;
+        var second_subject_percentage = (second_subject_marksObtained*100)/marks_out_of;
+        var third_subject_percentage = (third_subject_marksObtained*100)/marks_out_of;
+        if(total_percentage >79 && total_percentage <=100){
+            document.write("<h1>Marks Sheet</h1>");
+            document.write("<h3>Total marks: "+total_marks+"</h3>");
+            document.write("<h3>Marks Obtained: "+total_Obtained_marks+"</h3>");
+            document.write("<h3>Percentage: "+total_percentage.toFixed(2)+"%</h3>");
+            document.write("<h3>Grade: A</h3>");
+            document.write("<h3>remarks: Excellent</h3>");
+        }
+        else if(total_percentage >69 && total_percentage<=79){
+            document.write("<h1>Marks Sheet</h1>");
+            document.write("<h3>Total marks: "+total_marks+"</h3>");
+            document.write("<h3>Marks Obtained: "+total_Obtained_marks+"</h3>");
+            document.write("<h3>Percentage: "+total_percentage.toFixed(2)+"%</h3>");
+            document.write("<h3>Grade: A</h3>");
+            document.write("<h3>remarks: Good</h3>");
+        }
+        else if(total_percentage >59 && total_percentage<=69){
+            document.write("<h1>Marks Sheet</h1>");
+            document.write("<h3>Total marks: "+total_marks+"</h3>");
+            document.write("<h3>Marks Obtained: "+total_Obtained_marks+"</h3>");
+            document.write("<h3>Percentage: "+total_percentage.toFixed(2)+"%</h3>");
+            document.write("<h3>Grade: B</h3>");
+            document.write("<h3>remarks: you need to be improve</h3>");
+        }
+        else{
+            document.write("<h1>Marks Sheet</h1>");
+            document.write("<h3>Total marks: "+total_marks+"</h3>");
+            document.write("<h3>Marks Obtained: "+total_Obtained_marks+"</h3>");
+            document.write("<h3>Percentage: "+total_percentage.toFixed(2)+"%</h3>");
+            document.write("<h3>Sorry!</h3>")
+        }
+    </script>
+</body>
+</html>

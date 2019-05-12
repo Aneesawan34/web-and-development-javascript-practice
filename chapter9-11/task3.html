@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- <h1 style=""></h1> -->
+    <script>
+        var color_1 = prompt("Enter first color name:");
+        var color_2 = prompt("Enter second color name:");
+        var color_3 = prompt("Enter third color name:");
+        var descriptionOfColor_1 = prompt("Enter description of first color: ");
+        var descriptionOfColor_2 = prompt("Enter description of second color: ");
+        var descriptionOfColor_3 = prompt("Enter discription of third color: ");
+        document.write("<table>");
+        document.write("<tr><td colspan='3'><hr /></td></tr>");
+        document.write("<tr class = 'row1'><th>Signal Color</th><th></th><th>Message</th></tr>");
+        document.write("<tr><td colspan='3'><hr /></td></tr>");
+        document.write("<tr class = 'row2'><td class='color'>"+color_1+"</td><td class='second'></td><td class = 'description'>"+descriptionOfColor_1+"</td>");
+        document.write("<tr class = 'row3'><td class='color'>"+color_2+"</td><td></td><td class = 'description'>"+descriptionOfColor_2+"</td>");
+        document.write("<tr class = 'row4'><td class='color'>"+color_3+"</td><td></td><td class = 'description'>"+descriptionOfColor_3+"</td>");
+        document.write("<tr></tr>")
+        document.write("<tr><td colspan='3'><hr /></td></tr>");
+        document.write("</table>");
+    </script>
+</body>
+</html>

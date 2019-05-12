@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var first_number = +prompt("Enter first number: ");
+        var second_number = +prompt("Enter second number");
+        var operation = prompt("Enter any operation /,*,+,-  :");
+        function add(a,b){
+            return a+b;
+        }
+        function sub(a,b){
+            return a-b;
+        }
+        function mul(a,b){
+            return a*b;
+        }
+        function div(a,b){
+            return a/b;
+        }
+        if(operation == '+'){
+            document.write(add(first_number,second_number))
+        }
+        else if(operation == '-'){
+            document.write(sub(first_number,second_number))
+        }
+        else if(operation == '*'){
+            document.write(mul(first_number,second_number))
+        }
+        else if(operation == '/'){
+            document.write(div(first_number,second_number))
+        }
+        else{
+            document.write("You enter Wrong Operater")
+        }
+    </script>
+</body>
+</html>
